@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cart</title>
+
+<link rel="stylesheet" type="text/css" href="1120.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+<script src="Desgin.js"></script>
+</head>
+<body>
+
+
+
+<header>
+		<h1>Welcome to Bean Boutique Coffee</h1>
+		
+
+           
+		<nav>
+
+            <div class="header-section1">
+                <ul class="headersection">
+                    <li>
+                        <p>Mon-Fri: 8am to 2pm</p>
+                    </li>
+                    <li>
+                        <p>Sat-Sun: 11am to 4pm</p>
+                    </li>
+                    
+                </ul>
+		</div>
+
+		<ul>
+			<li><a href="CoffeeHomepage.html"><i class="fa-solid fa-house"></i></a></li>
+			<li><a href="CoffeeSelect1.html">CoffeeSelect</a></li>
+			<li><a href="Brewingequipment.html">BrewingEquipments</a></li>
+			<li><a href="events.html">Event</a></li>
+			<li><a href="offers.html">Offer</a></li>
+			<li><a href="shoppingcart.html"><i class="fa-duotone fa-solid fa-cart-shopping"></i></a></li>
+			
+		</ul>
+
+
+	</nav>
+</header>
+
+
+<div class="select-container1">
+    <label for="coffee-select">Choose Coffee & Equipment:</label>
+    <select id="coffee-select" name="coffee">
+        <option value="Uniqueblendcoffee">Unique Coffee</option>
+        <option value="Mochacoffee">Mocha Coffee</option>
+        <option value="Cappuccino">Cappuccino</option>
+        <option value="Handpresso Pump black">Handpresso Pump Black</option>
+        <option value="Coffee Grinder">Coffee Grinders</option>
+        <option value="Lattle">Lattle</option>
+    </select>
+</div>
+
+	
+ <div class="box">
+	<h1>Bean Boutqiue Coffee Shop</h1>
+	<div class="cartmainrow">
+
+		
+				
+		<div class="cartsecondrow">
+		<div class="cartcol1">
+			
+			<img src="Coffeeimg/Coffee1.jpg" alt="expresso">
+			<div class="cartcol2">
+				
+				<h3>Expresso Coffee</h3>
+				<h4>Price: $10</h4>
+				<p>Quanatity :<input type="number" name="QuantityValue" value="1" min="1" max="5"></p>
+				<a href="#" >Remove</a><br>
+
+
+			</div>
+		</div>
+
+		<div class="cartcol1">
+			
+			<img src="Coffeeimg/CCP.jpg" alt="cappuccino.jpg">
+			<div class="cartcol2">
+				
+				<h3>Cappuccino Coffee</h3>
+				<h4>Price: $10</h4>
+				<p>Quanatity :<input type="number" name="QuantityValue" value="1" min="1" max="5"></p>
+				<a href="#" >Remove</a><br>
+
+
+			</div>
+		</div>
+		<div class="cartcol1">
+			
+			<img src="Coffeeimg/MochaCoffee.jpg" alt="Mochacoffee.jpg">
+			<div class="cartcol2">
+				
+				<h3>Mocha Coffee</h3>
+				<h4>Price: $10</h4>
+				<p>Quanatity :<input type="number" name="QuantityValue" value="1" min="1" max="5"></p>
+				<a href="#" >Remove</a><br>
+
+
+			</div>
+		</div>
+		<div class="cartcol1">
+			
+			<img src="Coffeeimg/c1.jpg" alt="uniblend coffee.jpg">
+			<div class="cartcol2">
+				
+				<h3>UniqueBlend  Coffee</h3>
+				<h4>Price: $10</h4>
+				<p>Quanatity :<input type="number" name="QuanValue" value="1" min="1" max="5"></p>
+				<a href="#" >Remove</a><br>
+
+
+			</div>
+		</div>
+		<div class="cartcol1">
+			
+			<img src="Coffeeimg/E1.jpg" alt="Handpresso Pump black.jpg">
+			<div class="cartcol2">
+				
+				<h3>Handpresso Pump black</h3>
+				<h4>Price: $10</h4>
+				<p>Quanatity :<input type="number" name="QuantityValue" value="1" min="1" max="5"></p>
+				<a href="#" >Remove</a><br>
+
+
+			</div>
+		</div>
+		<div class="cartcol1">
+			
+			<img src="Coffeeimg/G1.jpg" alt="Coffee grinder.jpg">
+			<div class="cartcol2">
+				
+				<h3>Coffee Grinder</h3>
+				<h4>Price: $10</h4>
+				<p>Quanatity :<input type="number" name="QuantityValue" value="1" min="1" max="5"></p>
+				<a href="#" >Remove</a><br>
+
+
+			</div>
+		</div>
+
+
+		<div class="cartcol3">
+			<h3>Payment Summary</h3>
+			<p>
+				<span>Subtotal:</span>
+				<span>$60</span>
+
+
+			</p>
+			<hr>
+			<p>
+				<span>Commercial Tax:</span>
+				<span>$5</span>
+
+
+			</p>
+			<hr>
+			<p>
+				<span>All Total:</span>
+				<span>$65</span>
+
+
+			</p>
+<fieldset>
+<legend>Payment Section</legend>
+ 
+            <table>
+<tr>
+<td>Payment Type<br>
+
+<input type="radio" name="rdoPaymentType" value="MPU" onclick="showPaymentTable()" checked> MPU
+<input type="radio" name="rdoPaymentType" value="VISA" onclick="showPaymentTable()"> VISA
+<input type="radio" name="rdoPaymentType" value="COD" onclick="hidePaymentTable()"> Cash on Delivery
+
+</td>
+</tr>
+ 
+                <tr>
+<td>
+<table id="PaymentTable" >
+<tr>
+<td>
+<input type="number"  placeholder="Enter your card number"><br>
+</td>
+</tr> 
+</table>
+</td>
+</tr>
+</table>
+</fieldset>
+ 
+
+
+
+
+			<button class="btn" onclick="showmessage()">Checkout</button>
+			
+
+		</div>
+
+
+
+		</div>			
+
+	</div>
+	
+	
+
+
+</div>
+
+	
+
+	
+
+
+		
+
+
+
+	<footer>
+		<p>&copy; 2024 Bean Boutique Coffee. All rights reserved.</p>
+		<p>You can reach us at <a href="mailto:contact@ourcompany.com">contact@ourcompany.com</a> or call us at (+95) 9254123669.</p>
+		<div class="social-media">
+			
+			<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+				<blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+					<a href="https://www.facebook.com/facebook">Facebook</a>
+				</blockquote>
+			</div>
+		</div>
+
+
+			<a class="twitter-timeline" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a> 
+			
+			<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CG0UU3MFLlB/" data-instgrm-version="13">
+				<a href="https://www.instagram.com/p/CG0UU3MFLlB/">Instagram Post</a>
+			</blockquote>
+			
+	</footer>
+</body>
+</html>
